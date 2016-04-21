@@ -6,13 +6,13 @@ import java.io.IOException;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-public class PixelInspector {
+public class ImageAdjuster {
 	public static void main(String[] args) throws IOException {
 		Picture p = A7Helper.readFromURL("http://www.cs.unc.edu/~kmp/kmp.jpg");
-		PixelPictureViewWidget simple_widget = new PixelPictureViewWidget(p);
-
+		ImagePictureViewWidget simple_widget = new ImagePictureViewWidget(p);
+		
 		JFrame main_frame = new JFrame();
-		main_frame.setTitle("Assignment 7 Pixel Inspector");
+		main_frame.setTitle("Assignment 7 Image Adjuster");
 		main_frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		JPanel top_panel = new JPanel();
